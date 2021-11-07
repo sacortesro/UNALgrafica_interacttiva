@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+body, html { /* Se determina el estilo de la letra, color y generalidades del color de fondo */
   height: 100%;
   color: #777;
   line-height: 1.8;
   background-color: rgb(248, 208, 160);
-}
+} 
 
-.bj-container {
+.bj-container { /* Contenedor para texto e imágenes en el proyecto */
 	position: relative;
 	left: 10px;
 	float:left;
@@ -16,7 +16,7 @@ body, html {
     overflow: visible;
 }
 
-.bj-container-item {
+.bj-container-item { /* Contenedor de distinto color de fondo */
 	position: relative;
 	left: 10px;
 	float:left;
@@ -25,13 +25,13 @@ body, html {
     background-color: rgb(255, 229, 197);
 }
 
-.bj-fit {
+.bj-fit { /* Para ajustar la imágen al tamaño de la página */
     max-width: 99%;
     max-height: 100%;
     margin: auto;
 }
 
-.bj-btn,.bj-button{
+.bj-btn,.bj-button{ /* Estilos de los botones en la barra de navegación */
     border:none;
     display:inline-block;
     padding:8px 16px;
@@ -44,11 +44,11 @@ body, html {
     cursor:pointer;
     white-space:nowrap
 }
-.bj-bar .bj-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bj-bar .bj-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0} /* Estilo de la barra de navegación */
 
 
 
-.bj-center{
+.bj-center{ /* Centra el texto */
     margin: auto;
     text-align: center;
     padding: 10px;
