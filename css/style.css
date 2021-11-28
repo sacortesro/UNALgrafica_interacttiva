@@ -1,37 +1,91 @@
 @charset "UTF-8";
 
+/* Estructura general del proyecto */
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
-  background-color: rgb(248, 208, 160);
+  background-color: rgb(131, 40, 40);
+  text-align: center;
 }
 
+/*Contenedor general del proyecto*/
 .bj-container {
 	position: relative;
-	left: 10px;
-	float:left;
-    margin: auto;   
+	float: left;
+    margin: 20px;   
     overflow: visible;
 }
 
+/* Contenedor de texto */
+
+.bj-container-txt {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    border: 1px solid brown;
+    background-color: beige;
+}
+
+.bj-container-txt > h1{
+    color: rgb(70, 58, 58);
+}
+
+.bj-container-txt > p{
+    margin: 25px;
+    background-color: rgb(255, 255, 255);   
+    /* border: 2px solid brown; */
+}
+
+.bj-container-txt-just {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1250px;
+    width: 1200px;
+    border: 1px solid brown;
+    background-color: beige;
+    padding: 10px 20px;
+}
+
+.bj-container-txt-just ul{
+    text-align: justify;
+}
+
+.bj-container-txt-just img{
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* color barrra de navegación */
+.bj-top {
+    background-color: rgb(88, 30, 64);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Contenedor de barra de navegación*/
+.bj-bar {
+    margin: 8px;
+}    
+
+/*Contenedor de los items de la barra de navegación*/
 .bj-container-item {
-	position: relative;
-	left: 10px;
-	float:left;
+	display: inline-flex;
+    position: relative;
     margin-bottom: 10px; 
-    margin-right: auto;  
-    background-color: rgb(255, 229, 197);
+    margin-right: 10px;  
 }
 
-.bj-fit {
-    max-width: 99%;
-    max-height: 100%;
-    margin: auto;
-}
-
-.bj-btn,.bj-button{
+/* Se ajustan los botones de navegación */
+.bj-button{
     border:none;
     display:inline-block;
     padding:8px 16px;
@@ -44,12 +98,186 @@ body, html {
     cursor:pointer;
     white-space:nowrap
 }
-.bj-bar .bj-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 
+/* Se ajusta la imagen del título de bojack */
+.bj-button-home {  
+    border:none;
+    margin:8px 20px;
+    vertical-align:middle;
+    overflow:auto; 
+} 
 
+.bj-home-img {
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+}
 
+/* Contenedor pie de página*/
+.bj-foot-page{
+    display: flex;
+    max-width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 20px;
+    width: auto;
+    background-color: black;
+    text-align: left;
+    justify-content:space-evenly;
+}
+ 
+/* Se ajusta la imagen del pie de página */
+.bj-footer-img {
+    padding-right: 30px;
+    padding-top: 20px;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+
+/* ajusta contenido */
+.bj-fit {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+/* Utilidad para centrar  */
 .bj-center{
     margin: auto;
     text-align: center;
     padding: 10px;
+}
+
+/* Navegación de los personajes */
+
+.bj-navigation-characters{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    margin: 20px 120px 20px 120px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(43, 43, 73);
+} 
+
+.bj-image-nav{
+    /* border: 1px solid brown; */
+    max-width: 100%;
+    width: 180px;
+    height: auto;
+    margin: 5px;
+}
+
+.bj-container-img-txt {
+    max-width: 100%;
+    margin: 10px 30px 10px 30px;
+    border: 1px solid brown;
+    background-color: beige;
+    padding: 10px 100px 10px 100px;
+    
+}
+
+.bj-grid-characters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+    align-items:stretch;
+    justify-items: center;
+    
+    
+}
+
+.bj-container-img-txt > h1{
+    color: rgb(70, 58, 58);
+}
+
+.bj-container-img-txt > p{
+    margin: 25px;
+    background-color: rgb(255, 255, 255);   
+    /* border: 2px solid brown; */
+}
+
+#bj-btn-menu {
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: auto;
+    margin: 20px;
+}
+
+header {
+    width: 100%;
+	z-index: 10;
+} 
+
+header label:hover {
+    cursor: pointer;
+}
+
+
+/* Cuando la página mide menos de 800px */
+@media only screen and (max-width:800px) {
+
+
+    .bj-bar {
+        position: absolute;
+        top: 50px;
+        background: rgb(43, 43, 73);
+		z-index: 30;
+        width: 200px;
+        margin-left: -60%;
+        transition: all 1s;
+    }
+
+    #bj-btn-menu:checked ~ .bj-bar {
+        margin: 1px;
+    } 
+
+    header label{
+        display: block;
+    } 
+
+    .bj-button {
+        display: block;
+        font-size: 15px;
+        margin-left: 1px;
+
+    }
+    
+    .bj-footer-img {
+        padding-right: 30px;
+        padding-top: 20px;
+        max-width: 100%;
+        width: 120px;
+        height: auto;
+    }
+
+    .bj-grid-characters img {
+        width: auto;
+        height: 200px;
+    }
+
+    .bj-container-txt-just img{
+        width: 400px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    .bj-container-txt-just {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        border: 1px solid brown;
+        background-color: beige;
+        padding: 10px 20px;
+    }
+    
 }

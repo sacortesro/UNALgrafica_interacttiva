@@ -13,53 +13,82 @@
     <title>El mundo de Bojack Horseman</title>
 </head>
 <body>
-    <div class="bj-top">
-        <div class="bj-bar" id="myNavbar">
-            <a href="./index.html" class="bj-button">HOME</a>
-            <a href="./ubicación.html" class="bj-button">UBICACIONES</a>
-            <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-            <a href="./activities.html" class="bj-button"><i class="fa fa-th"></i> ACTIVIDADES</a>
-            <a href="./history.html" class="bj-button"><i class="fa fa-envelope"></i> HISTORIA</a>
-            <a href="./references.html" class="bj-button"> <i
-                    class="fa fa-envelope"></i> REFERENCIAS </a>
-    </div>
-    <div class="bj-container">
+    <!-- Barra de navegación -->
+    <header class="bj-top">
+        <input type="checkbox" id="bj-btn-menu">
+        <label for="bj-btn-menu"><div class="fa fa-th-list" ></div></label>
+        <nav class="bj-bar" id="myNavbar">
+            <ul>
+                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
+                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
+                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
+                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
+                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
+            </ul>
+        </nav>
+        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
+                alt="No logo"> </a>
+
+    </header>
+
+    <div class="bj-container-txt">
         <h1 class="bj-center"> Lugares </h1>
-        <div class="bj-container-item" >
-            <h2 class="bj-center"> Visitar los bares </h2>
+        <h2 class="bj-center"> Visitar los bares </h2>
+        <div class="bj-container-txt" >            
             <p>
                 En la serie se muestran diversos lugares y diversas actividades que realizar. Las actividades que realiza más
                 frecuentemente Bojack es drogarse y tomar en los diferentes bares de la ciudad. Siendo el que mas frecuenta Bellican's
             </p>
-            <p class="bj-center">
+            <br>
+            <div class="bj-center">
                 <img src="./images/Bellcians.webp" alt="Bellican's bar">
-            </p>
+            </div>
         </div>
 
-        <div class="bj-container-item" >
-            <h2 class="bj-center"> Visitar los centros de rehabilitación </h2>
+        <h2 class="bj-center"> Visitar los centros de rehabilitación </h2>
+        <div class="bj-container-txt" >
+            
             <p>
                 En la serie se muestra como diferentes personajes visitan y salen de varios centros de rehabilitación en búsqueda de
                 solucionar sus problemas con las drogas. Es un tema recurrente de la serie, dónde la rehabilitación de Bojack sólamente
                 se logra cuando se aisla totalmente en la útima temporada.
             </p>
-            <p class="bj-center">
+
+            <br>
+            <div class="bj-center">
                 <img src="./images/Pastiches.webp" alt="Pastiches">
-            </p>
+            </div>
         </div>
 
-        <div class="bj-container-item" >
-            <h2 class="bj-center"> Visitar los restaurantes </h2>
+        <h2 class="bj-center"> Visitar los restaurantes </h2>
+        <div class="bj-container-txt" >
+            
             <p>
                 Uno de los lugares más recurrendes de la serie es Elefino. En este restaurante suceden variedad de cosas trasendentales
                 para la historia, al final Mr. Peneatbutter adquiere el restaurante en un impulso.
             </p>
-            <p class="bj-center">
+            <br>
+            <div class="bj-center">
                 <img src="./images/Elefino.webp" alt="Delfino's restaurant">
-            </p>
+            </div>
         </div>
     </div>
 
+    <div class="bj-foot-page">
+        <span>
+            Santiago Cortes Romero
+            <br>
+            Universidad Nacional de Colombia
+            <br>
+            Gráfica interactiva
+            <br>
+            2021
+        </span>
+        <div>
+            <img class="bj-footer-img" src="./images/unal_logo.png" alt="Universidad Nacional">
+        </div>
+        
+    </div>
 
 
 </body>

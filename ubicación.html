@@ -15,16 +15,22 @@
 
 <body>
     <!-- Barra de navegación -->
-    <div class="bj-top">
-        <div class="bj-bar" id="myNavbar">
-            <a href="./index.html" class="bj-button">HOME</a>
-            <a href="./ubicación.html" class="bj-button">UBICACIONES</a>
-            <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-            <a href="./activities.html" class="bj-button"><i class="fa fa-th"></i> ACTIVIDADES</a>
-            <a href="./history.html" class="bj-button"><i class="fa fa-envelope"></i> HISTORIA</a>
-            <a href="./references.html" class="bj-button"> <i
-                    class="fa fa-envelope"></i> REFERENCIAS </a>
-    </div>
+    <header class="bj-top">
+        <input type="checkbox" id="bj-btn-menu">
+        <label for="bj-btn-menu"><div class="fa fa-th-list" ></div></label>
+        <nav class="bj-bar" id="myNavbar">
+            <ul>
+                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
+                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
+                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
+                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
+                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
+            </ul>
+        </nav>
+        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
+                alt="No logo"> </a>
+
+    </header>
 
 
     <!-- Imágen de portada -->
@@ -32,23 +38,45 @@
         <img class="bj-fit" src="./images/hollywoo.jpg" alt="Imagen">
     </div>
 
-    <!-- Sección de descripción --> 
-    <div class="bj-container" id="about"> 
-        <h3 class="bj-center" >Sobre el lugar </h3>
-        <p class="bj-center" ><em>Hollywoo</em></p>
-        <p>
-            Hollywhoo es la ciudad dónde se desarrolla la mayoría de la historia de Bojack Horseman, que obtiene su
-            nombre depués de que se retirara la D. La serie se ambienta en un mundo de animales antropormórficos, que conviven con
-            los seres humanos. La ciudad busca ser una versión parodia del Hollywood real, con varios lugares y personajes siendo referencias de
-            lugares y puntos de Hollywood. 
-        </p>
+    <!-- Sección de descripción -->
+    <div class="bj-container" id="about">
+        <div class="bj-container-txt" >
+            <h1 class="bj-center">Sobre el lugar </h1>
+            <h3 class="bj-center"><em>Hollywoo</em></h3>
+            <p>
+                Hollywhoo es la ciudad dónde se desarrolla la mayoría de la historia de Bojack Horseman, que obtiene su
+                nombre depués de que se retirara la D. La serie se ambienta en un mundo de animales antropormórficos,
+                que conviven con
+                los seres humanos. La ciudad busca ser una versión parodia del Hollywood real, con varios lugares y
+                personajes siendo referencias de
+                lugares y puntos de Hollywood.
+            </p>
 
-        <p class="bj-center" >Chicago</p>
-         <p>
-            Ciudad toma especial protagonimo en la sexta temporada de la serie. Diane se muda con su pareja Guy en búsqueda de
-            alejarse de su realción don Bojack. Se muestra recurrentemente un resraurante, estación de tren y la casa donde habita
-            Diane.
-        </p>
+            <h3 class="bj-center">Chicago</h3>
+            <p>
+                Ciudad toma especial protagonimo en la sexta temporada de la serie. Diane se muda con su pareja Guy en
+                búsqueda de
+                alejarse de su realción don Bojack. Se muestra recurrentemente un resraurante, estación de tren y la
+                casa donde habita
+                Diane.
+            </p>
+        </div>
+
+        <div class="bj-foot-page">
+            <span>
+                Santiago Cortes Romero
+                <br>
+                Universidad Nacional de Colombia
+                <br>
+                Gráfica interactiva
+                <br>
+                2021
+            </span>
+            <div>
+                <img class="bj-footer-img" src="./images/unal_logo.png" alt="Universidad Nacional">
+            </div>
+            
+        </div>
 </body>
 
 </html>

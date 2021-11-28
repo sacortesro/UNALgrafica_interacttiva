@@ -11,27 +11,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El mundo de Bojack Horseman</title>
 </head>
-<body>
-    <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
-            <a href="./index.html" class="bj-button">HOME</a>
-            <a href="./ubicación.html" class="w3-bar-item bart-button">UBICACIONES</a>
-            <a href="./characters.html" class="w3-bar-item bart-button w3-hide-small"><i class="fa fa-user"></i> PERSONAJES</a>
-            <a href="./activities.html" class="w3-bar-item bart-button w3-hide-small"><i class="fa fa-th"></i> ACTIVIDADES</a>
-            <a href="./history.html" class="w3-bar-item bart-button w3-hide-small"><i class="fa fa-envelope"></i> HISTORIA</a>
-            <a href="./references.html" class="w3-bar-item bart-button w3-hide-small"> <i
-                    class="fa fa-envelope">REFERENCIAS</i> </a>
-    </div>
 
-    <h1>Biography</h1>
-    <ul>
-        <li>portada:
-            https://www.bojackwallpapers.com/wallpapers/emotional-bojack-in-hollywoo-wallpaper/emotional-bojack-in-hollywoo-desktop-wallpaper-1920x1080.jpeg
-        </li>
-        <li>Hollywhoo: https://i.redd.it/tcnbr6ofva2z.jpg</li>
-        <li>Character images: https://bojackhorseman.fandom.com/wiki/Category:Main_characters</li>
-        <li>Character description: https://es.wikipedia.org/wiki/BoJack_Horseman</li>
-        <li>Locations images: https://bojackhorseman.fandom.com/wiki/Category:Locations</li>
-    </ul>
+<body>
+    <!-- Barra de navegación -->
+    <header class="bj-top">
+        <input type="checkbox" id="bj-btn-menu">
+        <label for="bj-btn-menu">
+            <div class="fa fa-th-list"></div>
+        </label>
+        <nav class="bj-bar" id="myNavbar">
+            <ul>
+                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
+                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
+                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
+                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
+                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
+            </ul>
+        </nav>
+        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
+                alt="No logo"> </a>
+
+    </header>
+    
+    <div class="bj-container-txt-just">
+        <h1>Biography</h1>
+        <ul>
+            <li><a target="_blank"
+                    href="https://www.bojackwallpapers.com/wallpapers/emotional-bojack-in-hollywoo-wallpaper/emotional-bojack-in-hollywoo-desktop-wallpaper-1920x1080.jpeg">
+                    Fotografia portada
+                </a>
+            </li>
+            <li><a target="_blank" href="https://i.redd.it/tcnbr6ofva2z.jpg"> Imagen hollywoo </a> </li>
+            <li><a target="_blank" href="https://bojackhorseman.fandom.com/wiki/Category:Main_characters"> Imagenes de
+                    los personajes</a> </li>
+            <li><a target="_blank" href="https://es.wikipedia.org/wiki/BoJack_Horseman"> Información de los personajes
+                </a> </li>
+            <li><a target="_blamk" href="https://bojackhorseman.fandom.com/wiki/Category:Locations"> Imágenes de los
+                    lugares </a></li>
+            <li><a target="_blamk" href="https://es.wikipedia.org/wiki/BoJack_Horseman"> Imagen del logo de Boajck
+                    Horseman </a></li>
+            <li><a target="_blamk" href="https://en.wikipedia.org/wiki/BoJack_Horseman_(character)"> Imagen de cuerpo
+                    completo de Boajck Horseman </a></li>
+            <li><a target="_blamk" href="https://upload.wikimedia.org/wikipedia/en/5/53/Todd_Chavez.png"> Imagen de
+                    cuerpo completo de Todd Chavez </a></li>
+            <li><a target="_blamk" href="https://upload.wikimedia.org/wikipedia/en/5/51/Diane_Nguyen_BoJack.png"> Imagen
+                    de cuerpo completo de Diane </a></li>
+            <li><a target="_blamk" href="https://upload.wikimedia.org/wikipedia/en/d/de/Princess_Carolyn.png"> Imagen de
+                    cuerpo completo de Princess Carolyn </a></li>
+            <li><a target="_blamk" href="https://upload.wikimedia.org/wikipedia/en/5/58/Mr._Peanutbutter.png"> Imagen de
+                    cuerpo completo de Mr. Peanutbutter </a></li>
+
+        </ul>
+
+        <br>
+
+        <h1>Mapa de navegación</h1>
+        <img class="bj-img-nav" src="./images/nav_diagram.jpg" alt="diagrama de navegación">
+    </div>
+    <div class="bj-foot-page">
+        <span>
+            Santiago Cortes Romero
+            <br>
+            Universidad Nacional de Colombia
+            <br>
+            Gráfica interactiva
+            <br>
+            2021
+        </span>
+        <div>
+            <img class="bj-footer-img" src="./images/unal_logo.png" alt="Universidad Nacional">
+        </div>
+
+    </div>
 </body>
+
 </html>

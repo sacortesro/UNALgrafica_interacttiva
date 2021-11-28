@@ -13,19 +13,28 @@
     <title>El mundo de Bojack Horseman</title>
 </head>
 <body>
-    <div class="bj-top">
-        <div class="bj-bar" id="myNavbar">
-            <a href="./index.html" class="bj-button">HOME</a>
-            <a href="./ubicación.html" class="bj-button">UBICACIONES</a>
-            <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-            <a href="./activities.html" class="bj-button"><i class="fa fa-th"></i> ACTIVIDADES</a>
-            <a href="./history.html" class="bj-button"><i class="fa fa-envelope"></i> HISTORIA</a>
-            <a href="./references.html" class="bj-button"> <i
-                    class="fa fa-envelope"></i> REFERENCIAS </a>
-    </div>
-    <div class="bj-container">
+    <!-- Barra de navegación -->
+    <header class="bj-top">
+        <input type="checkbox" id="bj-btn-menu">
+        <label for="bj-btn-menu"><div class="fa fa-th-list" ></div></label>
+        <nav class="bj-bar" id="myNavbar">
+            <ul>
+                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
+                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
+                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
+                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
+                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
+            </ul>
+        </nav>
+        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
+                alt="No logo"> </a>
+
+    </header>
+
+
+    <div class="bj-container-txt">
         <h1 class="bj-center">HISTORIA</h1>
-        <p class="bj-center"> <img class="bj-fit" src="./images/Hollywoo.webp" alt="Hollywhoo"> </p>
+        <div class="bj-center"> <img class="bj-fit" src="./images/Hollywoo.webp" alt="Hollywhoo"> </div>
         <p class="bj-container-item"> 
             Hollywhoo adquiere ese nombre al aparecer en las noticias que alguien se había robado la D. Más adelante la ciudad pasa
             a llamarse Hollywoob debido a que por error, Mr. Peanutbutter cuando es alcalde, instala la B en vez de la D.
@@ -33,6 +42,22 @@
             Esta ciudad al estar basada enteramente en el Hollywood real no tiene claro una historia de origen. Sólamente se llega a
             conocer que en este lugar es dónde suceden todos lo rodajes de las series y películas.
         </p>
+    </div>
+
+    <div class="bj-foot-page">
+        <span>
+            Santiago Cortes Romero
+            <br>
+            Universidad Nacional de Colombia
+            <br>
+            Gráfica interactiva
+            <br>
+            2021
+        </span>
+        <div>
+            <img class="bj-footer-img" src="./images/unal_logo.png" alt="Universidad Nacional">
+        </div>
+        
     </div>
 </body>
 </html>
