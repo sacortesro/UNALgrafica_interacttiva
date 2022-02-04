@@ -1,14 +1,23 @@
 @charset "UTF-8";
 
+
 /* Estructura general del proyecto */
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 
-body, html {
+body{
+  /* padding-top: 3rem; */
+  /* padding-bottom: 3rem; */
   height: 100%;
   color: #777;
   line-height: 1.8;
-  background-color: rgb(131, 40, 40);
-  text-align: center;
+  background-color: var(--colorBrown);
+  --colorBrown: #995425;
+}
+
+.bj-center{ /* Centra el texto */
+    margin: auto;
+    text-align: center;
+    padding: 10px;
 }
 
 /*Contenedor general del proyecto*/
@@ -62,13 +71,18 @@ body, html {
     margin-bottom: 30px;
 }
 
+.bj-containter-long-text{
+    background-color: white;
+}
+
 /* color barrra de navegación */
 .bj-top {
-    background-color: rgb(88, 30, 64);
+    background-color: var(--colorBlue);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    --colorBlue: #256a99;
 }
 
 /*Contenedor de barra de navegación*/
@@ -92,7 +106,7 @@ body, html {
     vertical-align:middle;
     overflow:auto;
     text-decoration:none;
-    color:#777;
+    color:rgb(255, 255, 255);
     background-color:inherit;
     text-align:center;
     cursor:pointer;
@@ -142,11 +156,7 @@ body, html {
     margin: auto;
 }
 
-.bj-center{ /* Centra el texto */
-    margin: auto;
-    text-align: center;
-    padding: 10px;
-}
+
 
 /* Navegación de los personajes */
 

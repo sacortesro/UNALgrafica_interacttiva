@@ -1,75 +1,101 @@
 <!DOCTYPE html>
 
 <html lang="es">
-<link rel="stylesheet" href="./css/style.css" type="text/css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El mundo de Bojack Horseman</title>
+    <link rel="stylesheet" href="css/style_2.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <!-- Barra de navegación -->
-    <header class="bj-top">
-        <input type="checkbox" id="bj-btn-menu">
-        <label for="bj-btn-menu"><div class="fa fa-th-list" ></div></label>
-        <nav class="bj-bar" id="myNavbar">
-            <ul>
-                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
-                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
-                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
-                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bj-nav-top" id="myNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="./ubicación.html" class="bj-button nav-link"> <i class="fa fa-home"></i>
+                            UBICACIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./characters.html" class="bj-button nav-link"><i class="fa fa-user"></i>
+                            PERSONAJES</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./activities.html" class="bj-button nav-link"><i class="fa fa-cutlery"></i>
+                            ACTIVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./history.html" class="bj-button nav-link"><i class="fa fa-university"></i>
+                            HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./references.html" class="bj-button nav-link"> <i class="fa fa-link"></i>
+                            REFERENCIAS </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="./index.html" class="bj-button-home"> <img class="bj-home-img"
+                    src="./images/BoJack_Horseman_Logo.svg" alt="No logo"> </a>
         </nav>
-        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
-                alt="No logo"> </a>
-
     </header>
 
-    <div class="bj-container-txt">
+    <div class="container bj-container-txt">
         <h1 class="bj-center"> Lugares </h1>
+        <hr>
         <h2 class="bj-center"> Visitar los bares </h2>
-        <div class="bj-container-txt" >            
+        <div class="bj-container-txt">
             <p>
-                En la serie se muestran diversos lugares y diversas actividades que realizar. Las actividades que realiza más
-                frecuentemente Bojack es drogarse y tomar en los diferentes bares de la ciudad. Siendo el que mas frecuenta Bellican's
+                En la serie se muestran diversos lugares y diversas actividades que realizar. Las actividades que
+                realiza más
+                frecuentemente Bojack es drogarse y tomar en los diferentes bares de la ciudad. Siendo el que mas
+                frecuenta Bellican's
             </p>
             <br>
             <div class="bj-center">
-                <img src="./images/Bellcians.webp" alt="Bellican's bar">
+                <img src="./images/Bellcians.webp" alt="Bellican's bar" class="img-fluid">
             </div>
         </div>
-
+        <hr>
         <h2 class="bj-center"> Visitar los centros de rehabilitación </h2>
-        <div class="bj-container-txt" >
-            
+        <div class="bj-container-txt">
+
             <p>
-                En la serie se muestra como diferentes personajes visitan y salen de varios centros de rehabilitación en búsqueda de
-                solucionar sus problemas con las drogas. Es un tema recurrente de la serie, dónde la rehabilitación de Bojack sólamente
+                En la serie se muestra como diferentes personajes visitan y salen de varios centros de rehabilitación en
+                búsqueda de
+                solucionar sus problemas con las drogas. Es un tema recurrente de la serie, dónde la rehabilitación de
+                Bojack sólamente
                 se logra cuando se aisla totalmente en la útima temporada.
             </p>
 
             <br>
             <div class="bj-center">
-                <img src="./images/Pastiches.webp" alt="Pastiches">
+                <img src="./images/Pastiches.webp" alt="Pastiches" class="img-fluid">
             </div>
         </div>
 
+        <hr>
         <h2 class="bj-center"> Visitar los restaurantes </h2>
-        <div class="bj-container-txt" >
-            
+        <div class="bj-container-txt">
+
             <p>
-                Uno de los lugares más recurrendes de la serie es Elefino. En este restaurante suceden variedad de cosas trasendentales
+                Uno de los lugares más recurrendes de la serie es Elefino. En este restaurante suceden variedad de cosas
+                trasendentales
                 para la historia, al final Mr. Peneatbutter adquiere el restaurante en un impulso.
             </p>
             <br>
             <div class="bj-center">
-                <img src="./images/Elefino.webp" alt="Delfino's restaurant">
+                <img src="./images/Elefino.webp" alt="Delfino's restaurant" class="img-fluid">
             </div>
         </div>
     </div>
@@ -87,9 +113,19 @@
         <div>
             <img class="bj-footer-img" src="./images/unal_logo.png" alt="Universidad Nacional">
         </div>
-        
+
     </div>
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 </body>
+
 </html>

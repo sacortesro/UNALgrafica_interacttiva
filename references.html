@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="./css/style.css" type="text/css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_2.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>El mundo de Bojack Horseman</title>
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <header class="bj-top">
-        <input type="checkbox" id="bj-btn-menu">
-        <label for="bj-btn-menu">
-            <div class="fa fa-th-list"></div>
-        </label>
-        <nav class="bj-bar" id="myNavbar">
-            <ul>
-                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
-                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
-                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
-                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bj-nav-top" id="myNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="./ubicación.html" class="bj-button nav-link"> <i class="fa fa-home"></i>
+                            UBICACIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./characters.html" class="bj-button nav-link"><i class="fa fa-user"></i>
+                            PERSONAJES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./activities.html" class="bj-button nav-link"><i class="fa fa-cutlery"></i>
+                            ACTIVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./history.html" class="bj-button nav-link"><i class="fa fa-university"></i>
+                            HISTORIA</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./references.html" class="bj-button nav-link"> <i class="fa fa-link"></i>
+                            REFERENCIAS </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="./index.html" class="bj-button-home"> <img class="bj-home-img"
+                    src="./images/BoJack_Horseman_Logo.svg" alt="No logo"> </a>
         </nav>
-        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
-                alt="No logo"> </a>
-
     </header>
-    
-    <div class="bj-container-txt-just">
+
+    <div class="container bj-container-txt">
         <h1>Biography</h1>
         <ul>
             <li><a target="_blank"
@@ -63,10 +79,10 @@
 
         </ul>
 
-        <br>
+        <hr>
 
         <h1>Mapa de navegación</h1>
-        <img class="bj-img-nav" src="./images/nav_diagram.jpg" alt="diagrama de navegación">
+        <img src="./images/nav_diagram.jpg" class="img-fluid" alt="diagrama de navegación">
     </div>
     <div class="bj-foot-page">
         <span>
@@ -83,6 +99,16 @@
         </div>
 
     </div>
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

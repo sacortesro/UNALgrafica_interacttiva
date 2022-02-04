@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <!--Se describen algunas de las ciudades que aparecen en el programa-->
 <html lang="es">
-<link rel="stylesheet" href="./css/style.css" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_2.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>El mundo de Bojack Horseman</title>
 </head>
 
 
 <body>
     <!-- Barra de navegación -->
-    <header class="bj-top">
-        <input type="checkbox" id="bj-btn-menu">
-        <label for="bj-btn-menu"><div class="fa fa-th-list" ></div></label>
-        <nav class="bj-bar" id="myNavbar">
-            <ul>
-                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
-                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
-                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
-                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bj-nav-top" id="myNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="./ubicación.html" class="bj-button nav-link"> <i class="fa fa-home"></i>
+                            UBICACIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./characters.html" class="bj-button nav-link"><i class="fa fa-user"></i>
+                            PERSONAJES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./activities.html" class="bj-button nav-link"><i class="fa fa-cutlery"></i>
+                            ACTIVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./history.html" class="bj-button nav-link"><i class="fa fa-university"></i>
+                            HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./references.html" class="bj-button nav-link"> <i class="fa fa-link"></i>
+                            REFERENCIAS </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="./index.html" class="bj-button-home"> <img class="bj-home-img"
+                    src="./images/BoJack_Horseman_Logo.svg" alt="No logo"> </a>
         </nav>
-        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
-                alt="No logo"> </a>
-
     </header>
 
 
@@ -40,27 +59,165 @@
 
     <!-- Sección de descripción -->
     <div class="bj-container" id="about">
-        <div class="bj-container-txt" >
+        <div class="bj-container-txt">
             <h1 class="bj-center">Sobre el lugar </h1>
 
             <h3 class="bj-center"> Los Angeles, Califormia </h3>
             <p>
-                Es la ubicación principal de Bojack Horseman. Es la ciudad dónde se úbica Hollywhoo y la casa de Bojack. Esta ciudad es una parodia de la ciudad real. es la ciudad más poblada del estado estadounidense de California y la segunda ciudad más poblada de Estados Unidos, tras Nueva York. Tiene, según el Censo de los Estados Unidos de 2020, una población de 3 979 576 habitantes, experimentando un crecimiento de un 4,9 % en 10 años.4​ Está ubicada en el sur de California y abarca una superficie de 1215 km.
+                Es la ubicación principal de Bojack Horseman. Es la ciudad dónde se úbica Hollywhoo y la casa de Bojack.
+                Esta ciudad es una parodia de la ciudad real, dónde todos sus habitantes ahora son seres
+                antropomórficos, algunos de estos son las versiones, con características animales, de personalidades
+                famosas de Hollywood. Los Angeles es la ciudad más poblada del estado estadounidense de California y la
+                segunda ciudad más poblada de Estados Unidos, tras Nueva York. Tiene, según el Censo de los Estados
+                Unidos de 2020, una población de 3 979 576 habitantes, experimentando un crecimiento de un 4,9 % en 10
+                años.4​ Está ubicada en el sur de California y abarca una superficie de 1215 km.
 
-                La ciudad es el centro del área estadística metropolitana de Los Ángeles-Long Beach-Santa Ana y del Gran Los Ángeles  La ciudad también es la sede del condado de Los Ángeles, uno de los condados más poblados y étnicamente diversos del país; la propia ciudad de Los Ángeles es reconocida como una de las metrópolis más diversas del planeta.
+                La ciudad es el centro del área estadística metropolitana de Los Ángeles-Long Beach-Santa Ana y del Gran
+                Los Ángeles La ciudad también es la sede del condado de Los Ángeles, uno de los condados más poblados y
+                étnicamente diversos del país; la propia ciudad de Los Ángeles es reconocida como una de las metrópolis
+                más diversas del planeta.
 
-                Los Ángeles es una ciudad global con gran influencia en ámbitos tan diversos como los negocios, el comercio internacional, el entretenimiento, la cultura, los medios de comunicación, la moda, la ciencia, los deportes, la tecnología, la educación, la medicina o la investigación. En la ciudad tienen su sede instituciones de renombre que abarcan diversos campos profesionales y culturales, y es uno de los motores económicos más importantes de Estados Unidos.                
+                Los Ángeles es una ciudad global con gran influencia en ámbitos tan diversos como los negocios, el
+                comercio internacional, el entretenimiento, la cultura, los medios de comunicación, la moda, la ciencia,
+                los deportes, la tecnología, la educación, la medicina o la investigación. En la ciudad tienen su sede
+                instituciones de renombre que abarcan diversos campos profesionales y culturales, y es uno de los
+                motores económicos más importantes de Estados Unidos.
             </p>
 
             <h3 class="bj-center"><em>Hollywood-Hollywoo-Hollywoob</em></h3>
             <p>
-                Hollywhoo es la ciudad dónde se desarrolla la mayoría de la historia de Bojack Horseman, que obtiene su
+                Hollywhoo es la ciudad dónde se desarrolla gran parte de la historia de Bojack Horseman, que obtiene su
                 nombre depués de que se retirara la D. La serie se ambienta en un mundo de animales antropormórficos,
                 que conviven con
                 los seres humanos. La ciudad busca ser una versión parodia del Hollywood real, con varios lugares y
                 personajes siendo referencias de
                 lugares y puntos de Hollywood.
             </p>
+
+            <h3 class="bj-center"> Casa de Bojack </h3>
+            <p>
+                Úbicada en la 1475 Luck Hoof Avenue, es la residencia del protagonista Bojack. La casa fué comprada por
+                Bojack en la década de los 80's, gracias al éxito que tuvo con su personaje protagónico de Horsin'
+                Around. Al inicio de la serie la casa también es habitada por Todd Chavez, que por años había estado
+                durmiendo en el sofá, esto hasta que Bojack lo echa. Bojack vive en el lugar hasta el final de la
+                temporada 2, después de esto, la serie toma lugar en otras locaciones, volviendo a la casa en ocasiones
+                esporádicas. En medio de la temporada 6 Bojack se ve obligado a vender la casa debido a problemas
+                económicos y la demanda de la compañia Xerox.
+            </p>
+
+            <h3 class="bj-center">Hollywoo(d) Hills Super-Max</h3>
+            <p>
+                De la prisión se muestran las celdas y la cafetería, la cual tiene la D tachada debido al robo del
+                letrero de Hollywoo.
+
+                En esta prisión es dónde retienen a Todd Chavez en el capítulo seis de la temporada 1. Es enviado allí
+                después de que Princess Carolyn utiliazara su negocio de turismo para lavar dinero. Al final escapa del
+                lugar gracias a que el helicóptero que carga la D se estrellara con la pared de la prisión.
+
+                La prisión vuelve a aparecer en la 6 temporada, para el capitulo final, después de que Bojack sea
+                sentenciado a 14 meses depués de irrumpir en su antigua casa, ahora propiedad de una nueva familia. En
+                la prisión Bojack decide dirigir una producción de teatro, por lo que le permiten irse durante un fin de
+                semana a la Boda de Princess Carolyn y Judah.
+            </p>
+
+            <h3 class="bj-center">Adept Adoption Agency</h3>
+            <p>
+                Es una locación recurrente en la 5 temporada. Hace parte del arco de personaje de Pricess Carolyn, que
+                despúes de una charla motivacional decide pagar $ 60.000 USD para adoptar un niño. La trabajadora social
+                que atiende a Princess es una persona persoza y grosera llamada Tracy.
+
+                Pricess Carolyn a lo largo de la temporada visita el lugar varias veces en búsqueda de oficializar la
+                adopción del hijo de Sadie, personaje que conoce gracias a la casa de adopción. Al finalizar la
+                temporada, después de que Sadie reconsiderara quedarse o no con la bebe, decide darle la bebé a Princess
+                Carolyn.
+            </p>
+
+            <h3 class="bj-center">Agencia Vigor</h3>
+            <p>
+                Es la agencia dónde trabaja Princess Carolyn al inicio de la 1 y 2 temporada como secretaria de Marv por
+                los últimos 14 años, en búsqueda de cumplir su sueño de ser una agente. En la 3 temporada Merv le
+                propone a Princess ser agente oficial de la compañia oferta que después Princess Carolyn rechaza dado
+                que decide iniciar su propia agencia con Rabitowitz.
+            </p>
+
+            <h3 class="bj-center">Agency VIM</h3>
+            <div class="bj-containter-long-text">
+                <p>
+                    VIM es una compañia fundada por Princess Carolyn, inicialmente era un proyecto con Rutabaga
+                    Rabitowitz,
+                    en la 2 temporada, pero todo se vino abajo cuando Princess se enterará que Rutabaga estaba
+                    intentando
+                    repara su relación con su exesposa, cuando ellos dos habían estado en una relación por casi 3 meses.
+                    Finalmente Princess Carolyn decide fundar la agencia en la temporada 3. Allí contrata a su asistente
+                    Judah Mannowdog y a Diane como coordinadora de redes sociales.
+                </p>
+                <p>
+                    Después de su fundación en la agencia VIM toma lugar una variedad de sucesos importantes en la vida
+                    de
+                    Princess Carolyn, esto debido a que ella pasa la mayor cantidad de tiempo allí, es esclava de su
+                    trabajo.
+                </p>
+                <p>
+                    En la 6 temporada Judah le decide regresar a la compañia a apoyar a Princess Carolyn, después de que
+                    lo
+                    despidiera en el final de la 3 temporada. Allí, es dónde después de que Princess Carolyn le
+                    aconsejara a
+                    Judah no dar toda su vida al trabajo. Depués de esto Princess Carolyn decide ir al concierto de su
+                    banda, pero cuando llega allí uno de los miembros anuncia que van a tener que tocar las versiones
+                    instrumentales de sus canciones, dado que su vocalista no se había presentado.
+                </p>
+                <p> Al regresar a la oficina Princess Carolyn descubre a Judah trabajando, quien le dice que prefiere
+                    estar
+                    con ella. Entonces después de intercambiar unas palabras, Princess Carolyn le pide a Judah que toque
+                    una
+                    de sus canciones, en medio de lo cual él le dice que la ama.
+
+                </p>
+            </div>
+
+            <h3 class="bj-center"> Tabbywood Apartments </h3>
+            <p>
+                Es el lugar en bojack horseman dónde Princess Carolyn vive. Residencia que Princess comparte con varios
+                de sus novios y con Todd Chavez a lo largo de varios episodios de la 4 temporada.
+
+
+            </p>
+
+            <h3 class="bj-center">Le Triste Apartments</h3>
+            <p>
+                Estos son los apartamentos dónde diane se muda después de haberse divorsiado con Mr. Peanutbutter. Están
+                ubicados en los barrios bajos de Los Ángeles, es un lugar pequeño y sucio, con una entrada pequeña desde
+                unas escaleras metálicas.
+
+                Diane entra a este apartamento en búsqueda de reconstruir su vida y abandonar sus relaciones tóxicas del
+                pasado. Varios personajes cómo Todd y Bojack la vienen a buscar al apartamento en búsqueda de consejo y
+                ayuda en sus problemas personales.
+
+                Durante un tiempo Diane abandona el apartamento por razones laborales, se dedica a ser reportera con
+                acompañada de un bisonte llamado Guy. Después de haber tenido varias crisis personales, descubre que
+                junto a Guy logra sentirse realmente cómoda, por lo que decide abandonar el apartemento y se muda a
+                Chicago.
+
+            </p>
+
+            <h3 class="bj-center">Bellicans</h3>
+            <div>
+
+                <p>
+                    Es una locación recurrente en la serie y el bar favorito de Bojack. En este lugar se presenta por
+                    primera vez al personaje de Bojack. Durante la 2 temporada, después del éxito del libro de Bojack,
+                    se observa un cartel que dice "Bojack drinks here".
+                </p>
+
+                <p>
+                    A través de la serie se puede observar a Bojack y otros personajes ir a tomar varias veces al lugar.
+                    En la 6 temporada se observa a Bojack tomando con el Doctor Champ, su doctor de rehabilitación, allí
+                    tienen una convesación introspectiva que termina con el Doctor Champ reacayendo en el alcoholismo y
+                    Bojack sintiendo la culpa de haberlo conducido nuevamente por ese camino.
+                </p>
+            </div>
+
+
 
             <h3 class="bj-center">Chicago</h3>
             <p>
@@ -85,8 +242,18 @@
             <div>
                 <img class="bj-footer-img" src="./images/unal_logo.png" alt="Universidad Nacional">
             </div>
-            
+
         </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

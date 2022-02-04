@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+
+/* ESTILOS GENERALES DEL PROYECTO
+-------------------------------------------------------------------------- */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+:root{
+    --colorBrown: #b07d5b;
+    --colorBlue: #2a76bd;
+    --txt-bg-color:#f7f2ee;
+    --txt-tl-color:#b05b64;
+    --dvd-sec:#b0a85b;
+    --txt-tl2-color: #bf7b83;
+}
+
+
+body{
+  padding-top: 4.5rem;
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background-color: var(--colorBrown) !important;  
+}
+
+
+.bj-center{ /* Centra el texto */
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ESTILOS DE LA BARRA DE NAVEGACIÓN
+--------------------------------------------------------------------------- */
+
+.bj-nav-top{
+    background-color: var(--colorBlue);
+}
+
+.bj-button {
+    color: white;
+}
+
+/* Se ajusta la imagen del título de bojack */
+.bj-button-home {  
+    border:none;
+    margin:8px 20px;
+    vertical-align:middle;
+    overflow:auto; 
+} 
+
+
+.bj-home-img {
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+}
+
+/* ------------------------------------------------------------------------ */
+/* CONTENEDORES DE TEXTO */
+
+.bj-container-txt{
+    padding: 1.5rem 3rem;
+    background-color: var(--txt-bg-color);
+}
+
+.bj-container-txt h1{    
+    color: var(--txt-tl-color);
+}
+
+.bj-container-txt h2{
+    color: var(--txt-tl2-color);
+}
+
+/* ------------------------------------------------------------------------ */
+/* DIVISORES DE TEXTO */
+
+hr {
+    border: 1px solid var(--dvd-sec);
+}
+
+/* ------------------------------------------------------------------------ */
+/* MENÚ 5 COLUMNAS */
+.bj-mn-5{
+    background-color: var(--dvd-sec);
+}
+
+.bj-mn-5 a{
+    border: 1px solid var(--txt-tl-color)
+}
+
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-15 {
+            width: 20%;
+            float: left;
+        }
+    }
+
+/* ------------------------------------------------------------------------ */
+/* PIE DE PÁGINA */
+/* Contenedor pie de página*/
+.bj-foot-page{
+    display: flex;
+    max-width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 20px;
+    width: auto;
+    background-color: black;
+    text-align: left;
+    justify-content:space-evenly;
+}
+ 
+/* Se ajusta la imagen del pie de página */
+.bj-footer-img {
+    padding-right: 30px;
+    padding-top: 20px;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}

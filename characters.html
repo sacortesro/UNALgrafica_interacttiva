@@ -1,129 +1,183 @@
 <!DOCTYPE html>
 <!-- Página que describe los personajes -->
 <html lang="es">
-<link rel="stylesheet" href="./css/style.css" type="text/css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_2.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>El mundo de Bojack Horseman</title>
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <header class="bj-top">
-        <input type="checkbox" id="bj-btn-menu">
-        <label for="bj-btn-menu"><div class="fa fa-th-list" ></div></label>
-        <nav class="bj-bar" id="myNavbar">
-            <ul>
-                <a href="./ubicación.html" class="bj-button"> <i class="fa fa-home"> UBICACIONES </i></a>
-                <a href="./characters.html" class="bj-button"><i class="fa fa-user"></i> PERSONAJES</a>
-                <a href="./activities.html" class="bj-button"><i class="fa fa-cutlery"></i> ACTIVIDADES</a>
-                <a href="./history.html" class="bj-button"><i class="fa fa-university"></i> HISTORIA</a>
-                <a href="./references.html" class="bj-button"> <i class="fa fa-link"></i> REFERENCIAS </a>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bj-nav-top" id="myNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <d class="col-smliv apse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="./ubicación.html" class="bj-button nav-link"> <i class="fa fa-home"></i>
+                            UBICACIONES</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./characters.html" class="bj-button nav-link"><i class="fa fa-user"></i>
+                            PERSONAJES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./activities.html" class="bj-button nav-link"><i class="fa fa-cutlery"></i>
+                            ACTIVIDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./history.html" class="bj-button nav-link"><i class="fa fa-university"></i>
+                            HISTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./references.html" class="bj-button nav-link"> <i class="fa fa-link"></i>
+                            REFERENCIAS </a>
+                    </li>
+                </ul>
+                </div>
+                <a href="./index.html" class="bj-button-home"> <img class="bj-home-img"
+                        src="./images/BoJack_Horseman_Logo.svg" alt="No logo"> </a>
         </nav>
-        <a href="./index.html" class="bj-button-home"> <img class="bj-home-img" src="./images/BoJack_Horseman_Logo.svg"
-                alt="No logo"> </a>
-
     </header>
 
-    <!-- Navegación por los personajes -->
-    <div class="bj-navigation-characters">
-        <a href="#BK" target="_self">
-            <img class="bj-image-nav" src="./images/BoJack_Horseman.webp" alt="bojack horseman">
-        </a>
-        <a href="#DN" target="_self">
-            <img class="bj-image-nav" src="./images/Diane.webp" alt="Diane Nguyen">
-        </a>
-        <a href="#MP" target="_self">
-            <img class="bj-image-nav" src="./images/Mr._Peanutbutter_casual.webp" alt="Mr. Peanutbutter">
-        </a>
-        <a href="#PC" target="_self">
-            <img class="bj-image-nav" src="./images/Princess_Carolyn.webp" alt="Princess Carolyn">
-        </a>
-        <a href="#TC" target="_self">
-            <img class="bj-image-nav" src="./images/Todd_Chavez.webp" alt="Todd Chavez">
-        </a>
-    </div>
+    <div class="container">
 
-    <!-- Descripción de los personajes -->
-    <div id="BH" class="bj-container-img-txt">
-        <h1 class="bj-center">BoJack Horseman</h1>
-        <div class="bj-grid-characters">
-            <img src="./images/BoJack_Horseman_2017_nav.png" alt="Bojack Horseman">
-            <p> BoJack es un caballo que alcanzó la fama en los años
-                noventa con la telecomedia Horsin' Around, el único éxito de su carrera. Desde que su programa fue
-                cancelado, BoJack
-                ha vivido abrumado por la frustración, el resentimiento y el odio a sí mismo. Aunque es una persona con
-                una
-                tormentosa vida personal, incapaz de reconocer abiertamente sus problemas o de comprometerse en una
-                relación,
-                también es alguien capaz de tomar decisiones inteligentes y que quiere ser feliz. </p>
+        <!-- Navegación por los personajes -->
+        <div class="row pt-5">
+            <div class="bj-mn-5">
+                <a href="#BK" target="_self" class="col-lg-15">
+                    <img src="./images/BoJack_Horseman.webp" class="img-fluid" alt="bojack horseman">
+                </a>
+                <a href="#DN" target="_self" class="col-lg-15">
+                    <img src="./images/Diane.webp" class="img-fluid" alt="Diane Nguyen">
+                </a>
+                <a href="#MP" target="_self" class="col-lg-15">
+                    <img src="./images/Mr._Peanutbutter_casual.webp" class="img-fluid" alt="Mr. Peanutbutter">
+                </a>
+                <a href="#PC" target="_self" class="col-lg-15">
+                    <img src="./images/Princess_Carolyn.webp" class="img-fluid" alt="Princess Carolyn">
+                </a>
+                <a href="#TC" target="_self" class="col-lg-15">
+                    <img src="./images/Todd_Chavez.webp" class="img-fluid" alt="Todd Chavez">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <div id="DN" class="bj-container-img-txt">
-        <h1 class="bj-center">Diane Nguyen</h1>
-        <div class="bj-grid-characters">
-            <img src="./images/Diane_Nguyen_BoJack_nav.png" alt="Diane Nguyen">
-            <p> Diane es la escritora fantasma que redacta la autobiografía de BoJack Horseman. Es una mujer
-                vietnamo-americana de
-                Boston, feminista de tercera ola e intelectual incomprendida que vive con su pareja, el actor y antigua
-                estrella de
-                telecomedias Mr. Peanutbutter. A lo largo de la serie desarrolla una fuerte amistad con BoJack que sin
-                embargo se
-                complica cuando él se enamora de ella. </p>
-        </div>
-    </div>
+        <!-- Descripción de los personajes -->
+        <div class="container bj-container-txt" style="margin-top: 5rem;">
 
-    <div id="MP" class="bj-container-img-txt">
-        <h1 class="bj-center">Mr. Peanutbutter</h1>
-        <div class="bj-grid-characters">
-            <img src="./images/Mr._Peanutbutter_nav.png" alt="Mr. Peanutbutter">
-            <p> Es un labrador retriever, pareja de Diane y amienemigo de BoJack. Su rivalidad comenzó cuando
-                protagonizaba
-                la
-                telecomedia Mr. Peanutbutter's House, con un argumento idéntico al de Horsin' Around. A pesar de esta
-                rivalidad, Mr.
-                Peanutbutter trata de mantener una buena relación con BoJack y le profesa una admiración no
-                correspondida.
-                Su
-                personalidad es la antítesis de BoJack, al ser alguien positivo, amistoso y extremadamente inocente.
-            </p>
-        </div>
-    </div>
-    <div id="PC" class="bj-container-img-txt">
-        <h1 class="bj-center">Princess Carolyn</h1>
-        <div class="bj-grid-characters">
-            <img src="./images/Princess_Carolyn_nav.png" alt="Princess Carolyn">
-            <p> Es una gata persa rosa, agente de BoJack y su exnovia. Tiene un carácter manipulador y agresivo, en
-                especial
-                cuando
-                desempeña su trabajo, y muchos problemas para separar la vida personal de la profesional. </p>
-        </div>
-    </div>
-
-    <div id="TC" class="bj-container-img-txt">
-        <h1 class="bj-center">Todd Chávez</h1>
-        <div class="bj-grid-characters">
-            <img src="./images/Todd_Chavez_nav.png" alt="Todd Chávez">
-            <p> Joven de 24 años sin trabajo ni propósitos en la vida, que se instaló en casa de BoJack después de una
-                fiesta. Al no
-                ser capaz de conseguir que se marchara, Todd vive gratis en el sofá de su sala desde hace cinco años.
-                Aunque
-                pueda
-                parecer que BoJack lo desprecia, en realidad mantiene una relación de dependencia y siempre hará lo
-                posible
-                para que
-                Todd esté cerca de él. El carácter de este personaje es absurdo, despreocupado y problemático, con
-                tendencia
-                a
-                complicarse la vida cuando sus amigos no están cerca. </p>
+            <div id="BH">
+                <h1 class="bj-center">BoJack Horseman</h1>
+                <div class="row px-5">
+                    <span class="col-sm-4" >
+                        <img src="./images/BoJack_Horseman_2017_nav.png" alt="Bojack Horseman">
+                    </span>
+                    <p class="col-sm-8"> BoJack es un caballo que alcanzó la fama en los años
+                        noventa con la telecomedia Horsin' Around, el único éxito de su carrera. Desde que su programa
+                        fue
+                        cancelado, BoJack
+                        ha vivido abrumado por la frustración, el resentimiento y el odio a sí mismo. Aunque es una
+                        persona
+                        con
+                        una
+                        tormentosa vida personal, incapaz de reconocer abiertamente sus problemas o de comprometerse en
+                        una
+                        relación,
+                        también es alguien capaz de tomar decisiones inteligentes y que quiere ser feliz. </p>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div id="DN">
+                <h1 class="bj-center">Diane Nguyen</h1>
+                <div class="row px-5">
+                    <span class="col-sm-4" >
+                        <img src="./images/Diane_Nguyen_BoJack_nav.png" alt="Diane Nguyen">
+                    </span>
+                    <p class="col-sm-8"> Diane es la escritora fantasma que redacta la autobiografía de BoJack Horseman. Es una mujer
+                        vietnamo-americana de
+                        Boston, feminista de tercera ola e intelectual incomprendida que vive con su pareja, el actor y
+                        antigua
+                        estrella de
+                        telecomedias Mr. Peanutbutter. A lo largo de la serie desarrolla una fuerte amistad con BoJack
+                        que
+                        sin
+                        embargo se
+                        complica cuando él se enamora de ella. </p>
+                </div>
+            </div>
+            <hr>
+            <div id="MP">
+                <h1 class="bj-center">Mr. Peanutbutter</h1>
+                <div class="row px-5">
+                    <span class="col-sm-4">
+                        <img src="./images/Mr._Peanutbutter_nav.png" alt="Mr. Peanutbutter">
+                    </span>
+                    <p class="col-sm-8"> Es un labrador retriever, pareja de Diane y amienemigo de BoJack. Su rivalidad comenzó cuando
+                        protagonizaba
+                        la
+                        telecomedia Mr. Peanutbutter's House, con un argumento idéntico al de Horsin' Around. A pesar de
+                        esta
+                        rivalidad, Mr.
+                        Peanutbutter trata de mantener una buena relación con BoJack y le profesa una admiración no
+                        correspondida.
+                        Su
+                        personalidad es la antítesis de BoJack, al ser alguien positivo, amistoso y extremadamente
+                        inocente.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div id="PC">
+                <h1 class="bj-center">Princess Carolyn</h1>
+                <div class="row px-5">
+                    <span class="col-sm-4">
+                        <img src="./images/Princess_Carolyn_nav.png" alt="Princess Carolyn">
+                    </span>
+                    <p class="col-sm-8"> Es una gata persa rosa, agente de BoJack y su exnovia. Tiene un carácter manipulador y agresivo,
+                        en
+                        especial
+                        cuando
+                        desempeña su trabajo, y muchos problemas para separar la vida personal de la profesional. </p>
+                </div>
+            </div>
+            <hr>
+            <div id="TC">
+                <h1 class="bj-center">Todd Chávez</h1>
+                <div class="row px-5">
+                    <span class="col-sm-4">
+                        <img src="./images/Todd_Chavez_nav.png" alt="Todd Chávez">
+                    </span>
+                    <p class="col-sm-8"> Joven de 24 años sin trabajo ni propósitos en la vida, que se instaló en casa de BoJack después
+                        de
+                        una
+                        fiesta. Al no
+                        ser capaz de conseguir que se marchara, Todd vive gratis en el sofá de su sala desde hace cinco
+                        años.
+                        Aunque
+                        pueda
+                        parecer que BoJack lo desprecia, en realidad mantiene una relación de dependencia y siempre hará
+                        lo
+                        posible
+                        para que
+                        Todd esté cerca de él. El carácter de este personaje es absurdo, despreocupado y problemático,
+                        con
+                        tendencia
+                        a
+                        complicarse la vida cuando sus amigos no están cerca. </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -142,6 +196,16 @@
         </div>
 
     </div>
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
