@@ -1,0 +1,7 @@
+# Modulos de NodeJS
+
+node_modules/
+
+# plugins de desarrollo
+
+package-lock.json

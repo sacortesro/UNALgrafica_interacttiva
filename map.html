@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Historia del lugar -->
 <html lang="es">
 
 <head>
@@ -10,10 +9,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="map.js"></script>
     <title>El mundo de Bojack Horseman</title>
 </head>
-
-<!-- Barra de navegación, se cargan estilos e imágenes -->
 
 <body>
     <!-- Barra de navegación -->
@@ -37,11 +35,11 @@
                         <a href="./activities.html" class="bj-button nav-link"><i class="fa fa-cutlery"></i>
                             ACTIVIDADES</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="./history.html" class="bj-button nav-link"><i class="fa fa-university"></i>
                             HISTORIA</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="./map.html" class="bj-button nav-link"> <i class="fa fa-map"></i>
                             MAPA </a>
                     </li>
@@ -49,6 +47,7 @@
                         <a href="./references.html" class="bj-button nav-link"> <i class="fa fa-link"></i>
                             REFERENCIAS </a>
                     </li>
+
                 </ul>
             </div>
             <a href="./index.html" class="bj-button-home"> <img class="bj-home-img"
@@ -56,21 +55,35 @@
         </nav>
     </header>
 
+    <main role="main">
+        <div class="container bj-container-txt">
+            <div>
+                <h1 class="bj-center">Mapa Hollywoob Bojack Horseman</h1>
+                <img src="images/map/map_hollywood.png" class="img-fluid" alt="Mapa Hollywood">
+                <!-- Imagenes de los pin -->
+                <a href="#Info" target="_self"><img class="pin-map" onclick="Punto1()" src="images/map/pin_map.png"
+                        alt="Casa Bojack Horseman"></a>
+                <a href="#Info" target="_self"><img class="pin-map" style="left: 30%; top: 18%;" onclick="Punto2()"
+                        src="images/map/pin_map.png" alt="Prisión Hollywood Hills"></a>
+                <a href="#Info" target="_self"><img class="pin-map" style="left: 49%; top: 43%;" onclick="Punto3()"
+                        src="images/map/pin_map.png" alt="Adept adoption Agency"></a>
+                <a href="#Info" target="_self"><img class="pin-map" style="left: 79%; top: 64%;" onclick="Punto4()"
+                        src="images/map/pin_map.png" alt="Agency VIM"></a>
+                <a href="#Info" target="_self"><img class="pin-map" style="left: 39%; top: 44%;" onclick="Punto5()"
+                        src="images/map/pin_map.png" alt="Tabbywood Apartments"></a>
+                <a href="#Info" target="_self"><img class="pin-map" style="left: 39%; top: 64%;" onclick="Punto6()"
+                        src="images/map/pin_map.png" alt="Bellicans"></a>
+            </div>
+            <hr>
 
-    <div class="container bj-container-txt">
-        <h1 class="bj-center">HISTORIA</h1>
-        <div class="bj-center"> <img class="img-fluid" src="./images/Hollywoo.webp" alt="Hollywhoo"> </div>
-        <p class="bj-container-item">
-            Hollywhoo adquiere ese nombre al aparecer en las noticias que alguien se había robado la D. Más adelante la
-            ciudad pasa
-            a llamarse Hollywoob debido a que por error, Mr. Peanutbutter cuando es alcalde, instala la B en vez de la
-            D.
-
-            Esta ciudad al estar basada enteramente en el Hollywood real no tiene claro una historia de origen.
-            Sólamente se llega a
-            conocer que en este lugar es dónde suceden todos lo rodajes de las series y películas.
-        </p>
-    </div>
+            <div class="bj-container-txt" id="Info">
+                <p>
+                    Mapa interactivo hollywoo, parte del mundo de la serie de Netflix Bojack Horseman. Realice click en
+                    el botón para conocer acerca del lugar.
+                </p>
+            </div>
+        </div>
+    </main>
 
     <div class="bj-foot-page">
         <span>
@@ -88,15 +101,4 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript
-        ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-
 </body>
-
-</html>
